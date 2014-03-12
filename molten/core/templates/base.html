@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Mia Zbikowski - {% if pagetitle %} {{ pagetitle }}{% endif %}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en"/>
+        
+        {% block metadata %}
+        {% endblock metadata %}
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+        {% block extralinks %}
+        {% endblock extralinks %}
+
+        <style type="text/css">
+            {% include "all_css.css" %}
+        </style>
+        <style type="text/css">
+            {% block extracss %}
+            {% endblock extracss %}
+        </style>
+      
+        <script language="javascript">
+            {% block extrajs %}
+            {% endblock extrajs %}
+        </script>
+    </head>
+    <body class="ss-body">
+        <div class="ss-content">
+            <nav id="ss-header">
+              <div class="header-title"><a href="{% url 'index' %}">MIA ZBIKOWSKI</a></div>
+              <ul class="header-links">      
+                <li class="header-link"><a href="{% url 'about' %}">About</a></li>
+                <li class="header-link"><a href="{% url 'projects' %}">Projects</a></li>
+                <li class="header-link"><a href="http://learnedandhacked.blogspot.ca/" target="_new">Blog</a></li>
+              </ul>
+            </nav>
+            {% block content %}{% endblock %}
+            <div id="ss-footer">
+              <div class="footer-txt">MADE WITH <span class="heart"></span> BY MIA IN 2014</div>
+            </div>
+        </div>
+    </body>
+ </html>

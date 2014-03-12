@@ -1,0 +1,152 @@
+/* Mobile resets */
+
+/*
+YUI 3.10.1 (build 8bc088e)
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif}table{font-size:inherit;font:100%}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}
+/*
+YUI 3.10.1 (build 8bc088e)
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+/*
+YUI 3.10.1 (build 8bc088e)
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}h1,h2,h3,h4,h5,h6,strong{font-weight:bold}abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}blockquote,ul,ol,dl{margin:1em}ol,ul,dl{margin-left:2em}ol{list-style:decimal outside}ul{list-style:disc outside}dl dd{margin-left:1em}th,td{border:0;padding:.5em}th{font-weight:bold;text-align:center}caption{margin-bottom:.5em;text-align:center}p{margin: 1em 0;},fieldset,table,pre{margin-bottom:1em}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em}
+
+/* End Mobile Resets */
+
+/* fonts */
+@font-face {
+  font-family: 'HelveticaNeueLTCom-UltLt';
+  src: url('{{ STATIC_URL }}fonts/HelveticaNeueLTCom-UltLt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueLTCom-UltLtIt';
+  src: url('{{ STATIC_URL }}fonts/HelveticaNeueLTCom-UltLtIt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueLTCom-Lt';
+  src: url('{{ STATIC_URL }}fonts/HelveticaNeueLTCom-Lt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ss-body {
+  font-family: HelveticaNeueLTCom-Ltn;
+  background: none repeat scroll 0 0 #FFFFFF;
+  margin: 0;
+  height: 100%;
+}
+.ss-content {
+}
+#ss-header {
+  margin: 30px auto 0;
+  width: 980px;
+  font-family: HelveticaNeueLTCom-Ltn;
+  overflow: hidden;
+}
+.header-title {
+  font-family: HelveticaNeueLTCom-UltLtIt;
+  float: left;
+  font-size: 16px;
+}
+.header-links {
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+.header-link {
+  float: left;
+  margin: 0 15px;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.middle-content {
+  margin: 30px auto;
+  width: 980px;
+  color: #333;
+}
+.laptop-code-img {
+  width: 800px;
+  margin: 130px auto;
+}
+#ss-footer {
+  width: 980px;
+  margin: 0 auto;
+  border-top: 1px solid #EAEAEA;
+}
+.footer-txt { 
+  color: #999999;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.heart:after{
+  color: #EA9465;
+  content: "♥";
+  display: inline-block;
+  font-size: 2em;
+  line-height: 0;
+  margin: -4px 0 0;
+  vertical-align: middle;
+}
+.strike-out {
+  text-decoration: line-through;
+}
+.italic {
+  font-style: italic;
+}
+.about-page {
+  font-family: HelveticaNeueLTCom-Lt; 
+  font-size: 18px;
+  margin: 50px auto;
+}
+.about-page a {
+  color: #377491;
+}
+.about-page p {
+  line-height: 28px;
+}
+.about-page img {
+  border-radius: 6px;
+  width: 230px;
+  height: 230px;
+}
+.helv-light-ultra {
+  font-family: HelveticaNeueLTCom-UltLt;
+}
+.projects-page {
+  font-family: HelveticaNeueLTCom-Lt; 
+  font-size: 18px;
+  margin: 80px auto;
+}
+.projects-page ul {
+  list-style: none;
+}
+.projects-page a{
+  color: #377491;
+}
+.project-disc {
+  font-size: 12px;
+}
+.project-desc {
+  margin: 5px 0 20px;
+}

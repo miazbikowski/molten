@@ -1,0 +1,7 @@
+syntax: glob
+*sqlite3
+*.pyc
+temp/*
+settings_local.py
+.svn
+
