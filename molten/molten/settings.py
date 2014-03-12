@@ -12,6 +12,13 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+# Full filesystem path to the project.
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+# Handy function to specify paths based on the project root
+proj_root = lambda *paths: os.path.join(PROJECT_ROOT, '..', *paths)
+# Static path
+static_path=os.path.join(os.path.dirname(__file__), "static")
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -82,3 +89,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = proj_root('..', 'static')
