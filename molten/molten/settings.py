@@ -43,8 +43,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'south',
     'core',
+    'thoughts'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -90,4 +90,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = proj_root('..', 'static')
+STATIC_ROOT = proj_root('core', 'static')
